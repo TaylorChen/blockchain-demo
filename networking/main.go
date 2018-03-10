@@ -104,7 +104,7 @@ func handleConn(conn net.Conn) {
 			}
 
 			mutex.Unlock()
-			io.WriteString(conn, string(output))
+			io.WriteString(conn, "\nFROM BOARDCAST: "+string(output)+"\n")
 		}
 
 	}()
