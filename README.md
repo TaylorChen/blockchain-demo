@@ -5,6 +5,12 @@ demo for blockchain
  2. go get -u github.com/gorilla/mux 
  3. go get -u github.com/davecgh/go-spew/spew
 ### run 
-go run main.go
-### access
+#### local run
+go run local/main.go
+#### access
 http://ip:ADDR
+
+#### networking run
+go run networking/main.go
+#### access in archlinux os
+netcat localhost 9000 

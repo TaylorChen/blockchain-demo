@@ -62,8 +62,8 @@ func main() {
 
 func run() error {
 	mux := makeMuxRouter()
-	httpAddr := os.Getenv("ADDR")
-	log.Println("Listening on ", os.Getenv("ADDR"))
+	httpAddr := os.Getenv("HTTP_ADDR")
+	log.Println("Listening on ", os.Getenv("HTTP_ADDR"))
 	s := &http.Server{
 		Addr:           ":" + httpAddr,
 		Handler:        mux,
