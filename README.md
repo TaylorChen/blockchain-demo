@@ -7,4 +7,4 @@ demo for blockchain
 ### run 
 go run main.go
 ### access
-http://ip:8080
+http://ip:ADDR
